@@ -17,21 +17,20 @@
 
 <p>4   June 2021</p>
 
-<p>pkg_add ImageMagick</p>
+<h2 id="first%20install%20ImageMagick">first install ImageMagick</h2>
 
-<pre><code>1. multi pictures to pdf 
+<pre><code>pkg_add ImageMagick
 </code></pre>
 
-<blockquote>
-<p>ls input*.png | sort -n | tr &#8216;\n&#8217; &#8216; &#8216; | sed &#8216;s&#47;$&#47;\ output.pdf&#47;&#8217; | xargs convert</p>
-</blockquote>
+<h2 id="multi%20pictures%20to%20pdf">multi pictures to pdf</h2>
 
-<pre><code>2.  combine pdf
+<pre><code>ls input*.png | sort -n | tr &#39;\n&#39; &#39; &#39; | sed &#39;s&#47;$&#47;\ output.pdf&#47;&#39; | xargs convert
 </code></pre>
 
-<blockquote>
-<p>convert pdf1.pdf pdf2.pdf temp.pdf</p>
-</blockquote>
+<h2 id="combine%20pdf">combine pdf</h2>
+
+<pre><code>convert pdf1.pdf pdf2.pdf temp.pdf
+</code></pre>
 </article>
 <i>Copyright 2021-2030 Renjian Hu . All rights reserved.</i>
 </body>
