@@ -13,17 +13,24 @@
 </nav>
 <hr />
 <article>
-<h1 id="Picturetopdf">Picturetopdf</h1>
+<h1 id="Picture%20to%20pdf">Picture to pdf</h1>
 
 <p>4   June 2021</p>
 
-<p>pkg_add ImageMagick
-    1. multi pictures to pdf </p>
+<p>pkg_add ImageMagick</p>
+
+<pre><code>1. multi pictures to pdf 
+</code></pre>
 
 <blockquote>
-<p>ls input*.png | sort -n | tr &#8216;\n&#8217; &#8216; &#8216; | sed &#8216;s&#47;$&#47;\ output.pdf&#47;&#8217; | xargs convert
-    2.  combine pdf
-  convert pdf1.pdf pdf2.pdf temp.pdf</p>
+<p>ls input*.png | sort -n | tr &#8216;\n&#8217; &#8216; &#8216; | sed &#8216;s&#47;$&#47;\ output.pdf&#47;&#8217; | xargs convert</p>
+</blockquote>
+
+<pre><code>2.  combine pdf
+</code></pre>
+
+<blockquote>
+<p>convert pdf1.pdf pdf2.pdf temp.pdf</p>
 </blockquote>
 </article>
 <i>Copyright 2021-2030 Renjian Hu . All rights reserved.</i>

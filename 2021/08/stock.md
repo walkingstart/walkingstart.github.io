@@ -1,4 +1,4 @@
-#   选股的一些方法
+#   select stock
 28 August 2021
 
 ## P=PE*E

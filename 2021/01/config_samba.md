@@ -4,6 +4,7 @@
 
 /etc/samba/smb.conf  example:
 
+<blcokquote>
   [global]
   
   workgroup = WORKGROUP
@@ -91,6 +92,7 @@ nano /etc/rc.local
 Add in the last line:
 
 /etc/rc.d/samba start
+</blockquote>
 
 And now we are ready!
 
