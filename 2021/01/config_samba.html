@@ -7,10 +7,10 @@
 </head>
 <body>
 <nav>
-	<a href="/index.html">Home</a> <!-- |
-	<a href="/about.html">About</a> |
-	<a href="mailto:o@olowe.co">Contact</a>
-    //-->
+	<a href="/index.html">Home</a>  |<!--
+	<a href="/about.html">About</a> |//-->
+	<a href="mailto:lastsnow@qq.com">Contact</a>
+    
 </nav>
 <hr />
 <article>
@@ -18,94 +18,97 @@
 
 <p>28 January 2021</p>
 
-<p>&#47;etc&#47;samba&#47;smb.conf  example:</p>
+<h2 id="&amp;#47;etc&amp;#47;samba&amp;#47;smb.conf">&#47;etc&#47;samba&#47;smb.conf</h2>
 
-<p>[global]</p>
+<p>example:</p>
 
-<p>workgroup = WORKGROUP</p>
+<pre><code>[global]
 
-<p>netbios name = File Server</p>
+workgroup = WORKGROUP
 
-<p>server string = OpenBSD Samba Server</p>
+netbios name = File Server
 
-<p>max log size = 100</p>
+server string = OpenBSD Samba Server
 
-<p>local master = yes</p>
+max log size = 100
 
-<p>os level = 100</p>
+local master = yes
 
-<p>invalid users = nobody root</p>
+os level = 100
 
-<p>load printers = no</p>
+invalid users = nobody root
 
-<p>max connections = 10</p>
+load printers = no
 
-<p>preferred master = yes</p>
+max connections = 10
 
-<p>preserve case = no</p>
+preferred master = yes
 
-<p>disable netbios = yes</p>
+preserve case = no
 
-<p>dns proxy = no</p>
+disable netbios = yes
 
-<p>domain master = yes</p>
+dns proxy = no
 
-<p>default case = lower</p>
+domain master = yes
 
-<p>encrypt passwords = yes</p>
+default case = lower
 
-<p>security = user</p>
+encrypt passwords = yes
 
-<p>hosts allow = 172.16.0.0&#47;24 127.0.0.1 # allow your network to access</p>
+security = user
 
-<p>hosts deny = all</p>
+hosts allow = 172.16.0.0&#47;24 127.0.0.1 # allow your network to access
 
-<p>bind interfaces only = yes</p>
+hosts deny = all
 
-<p>interfaces = jme0 # add the correct interface</p>
+bind interfaces only = yes
 
-<p>guest ok = yes</p>
+interfaces = jme0 # add the correct interface
 
-<p>guest only = yes</p>
+guest ok = yes
 
-<p>socket options = TCP<em>NODELAY IPTOS</em>LOWDELAY SO<em>RCVBUF=65536 SO</em>SNDBUF=65536</p>
+guest only = yes
 
-<p>strict sync = no</p>
+socket options = TCP_NODELAY IPTOS_LOWDELAY SO_RCVBUF=65536 SO_SNDBUF=65536
 
-<p>sync always = no</p>
+strict sync = no
 
-<p>syslog = 1</p>
+sync always = no
 
-<p>syslog only = yes</p>
+syslog = 1
 
-<p>[Files]</p>
+syslog only = yes
 
-<p>comment = files</p>
 
-<p>create mask = 644</p>
+[Files]
 
-<p>path = &#47;home&#47;iglesias&#47;network # change to the directory you want</p>
+comment = files
 
-<p>writeable = yes</p>
+create mask = 644
 
-<p>valid users = iglesias # change to user you want to give access</p>
+path = &#47;home&#47;iglesias&#47;network # change to the directory you want
 
-<p>read only = no</p>
+writeable = yes
 
-<p>browseable = yes</p>
+valid users = iglesias # change to user you want to give access
 
-<p>smbpasswd -a iglesias # username</p>
+read only = no
 
-<p>Restarting the service:</p>
+browseable = yes
 
-<p>&#47;etc&#47;rc.d&#47;samba restart</p>
+smbpasswd -a iglesias # username
 
-<p>nano &#47;etc&#47;rc.local</p>
+Restarting the service:
 
-<p>Add in the last line:</p>
+&#47;etc&#47;rc.d&#47;samba restart
 
-<p>&#47;etc&#47;rc.d&#47;samba start
-</p>
+nano &#47;etc&#47;rc.local
+
+Add in the last line:
+</code></pre>
+
+<p>&#47;etc&#47;rc.d&#47;samba start</p>
 
 <p>And now we are ready!</p>
 </article>

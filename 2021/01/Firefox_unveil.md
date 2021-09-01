@@ -1,11 +1,11 @@
 # Firefox unveil
 27 January 2021
 
-let firefox access other besides ~/Downloads
+1.let firefox access other besides ~/Downloads
 
-edit /etc/firefox/unveil.main  add your folder 
+2.edit /etc/firefox/unveil.main  add your folder 
 
-edit .config/gtk-3.0/bookmarks 
+3.edit .config/gtk-3.0/bookmarks 
 
     "file:///home/username/Downloads
   
@@ -13,6 +13,6 @@ edit .config/gtk-3.0/bookmarks
   
     file:///home/username/music"
 
-    and restart your firefox
+and restart your firefox
 
 
