@@ -1,4 +1,4 @@
-#  Invest——第一篇 速判估值与 PEG 的推导
+#  Invest_PEG
 3 September 2021
 
 **一、极简速判估值怎么判？**
